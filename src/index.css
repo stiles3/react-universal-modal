@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/AeonikTRIAL-Regular.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/AeonikTRIAL-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: url('./assets/fonts/AeonikTRIAL-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Clash';
+  src: url('./assets/fonts/clash-grotesk-semibold.otf') format('opentype');
+  font-weight: medium;
+  font-style: normal;
+  font-display: swap;
+}
+
+body{
+  background-color: hsl(var(--background));
+  height: 100svh;
+  font-family: 'Aeonik', sans-serif !important; 
+}
+#root{
+  height: 100%;
+}
+@layer base {
+  :root {
+    --background: #FBFBFB;
+    --card: #ffffff;
+    --primary: #5B32E5;
+    --secondary: #FFC72F;
+    --secondary-alt:#FFF2CA;
+    --muted: #F7F5F2;
+    --muted-alt:#808080;
+    --accent: #15F97C;
+    --accent-alt:#008E54;
+    --accent-2:#39ABA3;
+    --destructive: #ff4c4c;
+    --radius: 8px;
+  }
+
+}
+::host{
+  --text-light-fg-ci:var(--card)
+}
+  .sigCanvas {
+    margin-inline: auto;
+    margin-top: 1rem;
+    border-bottom: 2px solid #D3D3D3;
+    width: 70%;
+    height: 70%;
+  }
+
+  .signfont {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+   .bureau-logo.svelte-6dfbr5.svelte-6dfbr5 {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center !important;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
